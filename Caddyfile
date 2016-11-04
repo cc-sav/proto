@@ -1,0 +1,8 @@
+localhost:8080
+
+root /vagrant/public/
+gzip
+log /vagrant/log/server.log
+
+# Proxy requests to Go controller
+proxy /api localhost:8000
